@@ -1,4 +1,6 @@
 import './App.css';
+import championData from './data/champions.json';
+
 
 function App() {
   return (
