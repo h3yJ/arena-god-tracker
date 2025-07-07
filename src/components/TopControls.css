@@ -1,0 +1,23 @@
+/* src/components/TopControls.css */
+.top-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  padding: 4px 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+.control-toggle {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
