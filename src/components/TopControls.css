@@ -5,6 +5,7 @@
   gap: 12px;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .search-bar {
@@ -12,6 +13,10 @@
   font-size: 14px;
   border-radius: 8px;
   border: 1px solid #ccc;
+
+  flex: 1 1 200px;
+  max-width: 500px;
+  min-width: 150px;
   width: 200px;
 }
 
@@ -19,5 +24,19 @@
   font-size: 14px;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
+
+  /* flex: 1 1 140px;
+  min-width: 120px;
+  max-width: 220px; */
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+  justify-content: center;
+
+  /* Prevent it from breaking up the checkboxes individually */
+  flex: 1 1 auto;
 }

@@ -20,23 +20,25 @@ const TopControls = ({
         className="search-bar"
       />
 
-      <label className="control-toggle">
-        <input
-          type="checkbox"
-          checked={hideCompleted}
-          onChange={(e) => setHideCompleted(e.target.checked)}
-        />
-        Hide Completed
-      </label>
+      <div className="checkbox-group">
+        <label className="control-toggle">
+          <input
+            type="checkbox"
+            checked={hideCompleted}
+            onChange={(e) => setHideCompleted(e.target.checked)}
+          />
+          Hide Completed
+        </label>
 
-      <label className="control-toggle">
-        <input
-          type="checkbox"
-          checked={showCompletedLast}
-          onChange={(e) => setShowCompletedLast(e.target.checked)}
-        />
-        Show Incomplete First
-      </label>
+        <label className="control-toggle">
+          <input
+            type="checkbox"
+            checked={showCompletedLast}
+            onChange={(e) => setShowCompletedLast(e.target.checked)}
+          />
+          Show Incomplete First
+        </label>
+      </div>
     </div>
   );
 };
