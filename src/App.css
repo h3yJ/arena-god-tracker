@@ -11,14 +11,16 @@ body {
 
 .champion-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, 100px);
   gap: 10px;
-  justify-items: center;
+  /* justify-items: center; */
   /* justify-content: center; */
 
   max-width: 75rem;
   padding: 0 6%;
   margin: 0 auto;
+
+  place-content: start center;
 }
 
 .filter-bar {
@@ -47,4 +49,8 @@ body {
   margin: 1rem;
   font-size: 2rem;
   text-align: center;
+}
+
+html {
+  overflow-y: scroll;
 }
