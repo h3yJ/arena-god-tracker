@@ -28,8 +28,8 @@ const ChampionCard = ({ champ, completed, onToggle }) => {
                 fill="none"
                 stroke="url(#checkGradient)"
                 strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                strokeLinecap="butt"
+                strokeLinejoin="miter"
               />
               <defs>
                 <linearGradient id="checkGradient" x1="1" y1="0" x2="0" y2="1">

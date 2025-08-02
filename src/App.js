@@ -4,6 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import championData from './data/champions.json';
 import ChampionCard from './components/ChampionCard';
+import ProgressBar from './components/ProgressBar';
 import RoleFilter from './components/RoleFilter';
 import TopControls from './components/TopControls';
 
@@ -104,6 +105,11 @@ function App() {
           <RoleFilter selectedRole={selectedRole} onSelectRole={setSelectedRole} />
         </div>
       </div>
+
+      <ProgressBar
+        completedCount={Object.values(completedChamps).filter(Boolean).length}
+        totalCount={champions.length}
+      />
 
       <div className="content-container">
         <div className="champion-grid">
