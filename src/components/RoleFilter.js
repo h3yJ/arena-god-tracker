@@ -21,7 +21,7 @@ const RoleFilter = ({ selectedRole, onSelectRole }) => {
           onClick={() => onSelectRole(selectedRole === role.name ? null : role.name)}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/roles/${role.icon}`}
+            src={`/arena-god-tracker/roles/${role.icon}`}
             alt={role.name}
             className="role-icon"
             title={role.name}
