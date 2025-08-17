@@ -11,7 +11,7 @@ const ChampionCard = ({ champ, completed, onToggle }) => {
         <div className="icon-container">
           <div className={`icon-border ${completed ? 'completed' : ''}`}>
             <img
-              src={`./icons/${champ.image.full}`}
+              src={`${process.env.PUBLIC_URL}/icons/${champ.image.full}`}
               alt={champ.name}
               className="champion-icon"
               draggable="false"
