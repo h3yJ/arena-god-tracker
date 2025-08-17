@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/arena-god-tracker/static/css/main.86badcde.css",
-    "main.js": "/arena-god-tracker/static/js/main.b85657f2.js",
+    "main.js": "/arena-god-tracker/static/js/main.839b8cd9.js",
     "static/media/fa-solid-900.ttf": "/arena-god-tracker/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
     "static/media/fa-brands-400.ttf": "/arena-god-tracker/static/media/fa-brands-400.1815e00441357e01619e.ttf",
     "static/media/fa-solid-900.woff2": "/arena-god-tracker/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
@@ -13,10 +13,10 @@
     "static/media/fa-v4compatibility.woff2": "/arena-god-tracker/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/arena-god-tracker/index.html",
     "main.86badcde.css.map": "/arena-god-tracker/static/css/main.86badcde.css.map",
-    "main.b85657f2.js.map": "/arena-god-tracker/static/js/main.b85657f2.js.map"
+    "main.839b8cd9.js.map": "/arena-god-tracker/static/js/main.839b8cd9.js.map"
   },
   "entrypoints": [
     "static/css/main.86badcde.css",
-    "static/js/main.b85657f2.js"
+    "static/js/main.839b8cd9.js"
   ]
 }
