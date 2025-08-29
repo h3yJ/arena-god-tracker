@@ -33,6 +33,18 @@ function App() {
     localStorage.setItem('completedChamps', JSON.stringify(updated));
   };
 
+  const allCompleted = champions.length > 0 && 
+    champions.every(champ => completedChamps[champ.id]);
+
+  const toggleAll = () => {
+    const updated = {};
+    champions.forEach(champ => {
+      updated[champ.id] = !allCompleted; // flip based on current state
+    });
+    setCompletedChamps(updated);
+    localStorage.setItem('completedChamps', JSON.stringify(updated));
+  };
+
   // Apply filtering and sorting to champions
   let filteredChampions = [...champions];
 
@@ -101,6 +113,8 @@ function App() {
             setHideCompleted={setHideCompleted}
             showCompletedLast={showCompletedLast}
             setShowCompletedLast={setShowCompletedLast}
+            toggleAll={toggleAll}
+            allCompleted={allCompleted}
           />
           <RoleFilter selectedRole={selectedRole} onSelectRole={setSelectedRole} />
         </div>

@@ -8,13 +8,15 @@ const TopControls = ({
   hideCompleted,
   setHideCompleted,
   showCompletedLast,
-  setShowCompletedLast
+  setShowCompletedLast,
+  toggleAll,
+  allCompleted,
 }) => {
   return (
     <div className="top-controls">
       <input
         type="text"
-        placeholder="Search"
+        placeholder="Search..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         className="search-bar"
@@ -38,6 +40,8 @@ const TopControls = ({
           />
           Show Incomplete First
         </label>
+
+        <button className="check-toggle-btn" onClick={toggleAll}>Check / Uncheck All</button>
       </div>
     </div>
   );

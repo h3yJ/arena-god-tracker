@@ -40,3 +40,23 @@
   /* Prevent it from breaking up the checkboxes individually */
   flex: 1 1 auto;
 }
+
+.check-toggle-btn {
+  background-color: rgb(72, 72, 72);
+  color: white;
+  border: none;
+  border-radius:8px;
+  padding: 0.25rem 0.5rem;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.check-toggle-btn:hover {
+  background-color: rgb(95, 95, 95);
+}
+
+.check-toggle-btn:active {
+  transform: scale(0.95);
+  transition: none;
+}
